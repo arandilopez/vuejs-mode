@@ -2,12 +2,15 @@
 ;;
 ;; Copyright (C) 2020 Arandi Lopez
 ;; Author: Arandi Lopez <arandilopez.93@gmail.com>
-;; Comentary: A stupidly simple major mode for Vuejs
+;;
+;;; License: GPL-2
+;;; Commentary:
+;;;     A stupidly simple major mode for Vuejs
 ;;; Code:
 
 ;;;###autoload
 (define-derived-mode vuejs-mode web-mode "Vuejs"
-  "Major mode for editing Web & Vuejs templates"
+  "Major mode for editing Vuejs component files"
   (setq web-mode-script-padding 2
         web-mode-style-padding 2
         web-mode-block-padding 2
