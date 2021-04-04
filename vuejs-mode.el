@@ -7,14 +7,14 @@
 
 ;;;###autoload
 (define-derived-mode vuejs-mode web-mode "Vuejs"
-  "Major mode for editing Web & Vuejs templates.\\{web-vue-map}"
+  "Major mode for editing Web & Vuejs templates"
   (setq web-mode-script-padding 2
         web-mode-style-padding 2
         web-mode-block-padding 2
         tab-width 2))
 
 ;;;###autoload
-(add-to-list 'auto-mode-alist '("\\.vue\\'" . vuejs-mode))
+(add-to-list 'auto-mode-alist '("\\.vue$" . vuejs-mode))
 
 
 (provide 'vuejs-mode)
