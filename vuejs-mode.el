@@ -5,6 +5,7 @@
 ;; Comentary: A stupidly simple major mode for Vuejs
 ;;; Code:
 
+;;;###autoload
 (define-derived-mode vuejs-mode web-mode "Vuejs"
   "Major mode for editing Web & Vuejs templates.\\{web-vue-map}"
   (setq web-mode-script-padding 2
@@ -12,7 +13,7 @@
         web-mode-block-padding 2
         tab-width 2))
 
-;; Set as default mode for vuejs files
+;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.vue\\'" . vuejs-mode))
 
 
